@@ -7,12 +7,36 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TrackingTracker"
         tools:targetApi="31">
+        <activity
+            android:name=".admin.LoginAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashbordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.LoginUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.HomeUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.helpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.BookedActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

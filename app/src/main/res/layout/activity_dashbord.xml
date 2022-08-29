@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashbordActivity">
+    <ImageView
+        android:id="@+id/imageViewlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonAdmin"
+        android:layout_width="200dp"
+        android:layout_height="231dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/white"
+        android:paddingRight="20dp"
+        android:backgroundTint="@color/white"
+        android:onClick="GotoAdmin"
+        android:src="@drawable/admin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewlogo"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-36dp"
+        android:text="ADMIN"
+        android:textColor="@color/black"
+        android:textSize="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAdmin"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAdmin"
+        app:layout_constraintStart_toStartOf="@+id/buttonAdmin" />
+
+    <ImageButton
+        android:id="@+id/buttonUser"
+        android:layout_width="196dp"
+        android:layout_height="231dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="2dp"
+        android:background="@color/white"
+        android:onClick="GOtoUser"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user"
+        android:text="User"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewlogo"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="-36dp"
+        android:text="USERS"
+        android:textColor="@color/black"
+        android:textSize="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonUser"
+        app:layout_constraintEnd_toEndOf="@+id/buttonUser"
+        app:layout_constraintStart_toEndOf="@+id/buttonAdmin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
