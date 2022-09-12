@@ -13,6 +13,7 @@
         <entry key="..\:/Users/senth/TrackingTracker2/app/src/main/res/layout/activity_chat.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/senth/TrackingTracker2/app/src/main/res/layout/activity_dashbord.xml" value="0.22" />
         <entry key="..\:/Users/senth/TrackingTracker2/app/src/main/res/layout/activity_flaging_main.xml" value="0.25" />
+        <entry key="..\:/Users/senth/TrackingTracker2/app/src/main/res/layout/activity_flagings_view.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/senth/TrackingTracker2/app/src/main/res/layout/activity_help.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/senth/TrackingTracker2/app/src/main/res/layout/activity_home_admin.xml" value="0.22" />
         <entry key="..\:/Users/senth/TrackingTracker2/app/src/main/res/layout/activity_home_user.xml" value="0.1" />
@@ -21,6 +22,7 @@
         <entry key="..\:/Users/senth/TrackingTracker2/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/senth/TrackingTracker2/app/src/main/res/layout/activity_signup.xml" value="0.25" />
         <entry key="..\:/Users/senth/TrackingTracker2/app/src/main/res/layout/boking_details_admin.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/senth/TrackingTracker2/app/src/main/res/layout/flagging_item_card.xml" value="0.21979166666666666" />
         <entry key="..\:/Users/senth/TrackingTracker2/app/src/main/res/layout/fragment_group_ride.xml" value="0.18" />
         <entry key="..\:/Users/senth/TrackingTracker2/app/src/main/res/layout/fragment_single_ride.xml" value="0.18" />
         <entry key="..\:/Users/senth/TrackingTracker2/app/src/main/res/menu/booked_navigation.xml" value="0.167578125" />
