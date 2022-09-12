@@ -1,7 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.TrackingTracker" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Primary brand color. -->
+    <style name="Theme.TrackingTracker" parent="Theme.MaterialComponents.Light">
+        <!--Theme.AppCompat.Light -->
+        <!--MaterialComponents -->
+         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/black</item>
@@ -12,5 +14,14 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="textInputStyle">@style/outlined_edittext</item>
+    </style>
+    <style name="outlined_edittext" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeWidth">1.2dp</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxStrokeColor">@color/my_blue</item>
+        <item name="boxStrokeErrorColor">@color/my_red</item>
+        <item name="hintTextColor">@color/teal_200</item>
+        <item name="endIconTint">@color/teal_200</item>
     </style>
 </resources>

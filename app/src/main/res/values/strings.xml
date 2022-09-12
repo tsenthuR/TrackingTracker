@@ -2,4 +2,13 @@
     <string name="app_name">TrackingTracker</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="abouttext">More bicycles should be rented because tourists prefer to tour
+        the city on bicycles in groups rather than by using public transportation. The android
+        smartphone application Tracking Tracker will provide users the option to reserve bicycles online
+        from nearby rental businesses. The ability to navigate a map, track group members, and engage in group
+        discussion while cycling will also be made available to the bikers.
+        Every time there is a road block, traffic jam, or other street event, they may also mark a flag on the map and alert the others who will be traveling that way. in order to adjust their strategies appropriately. Not just bicycles but also average travelers can also utilize the Tracking Tracker.
+        The problem of bicycle rentals going missing without being returned by cyclists is a problem. Keeping track of the cyclists and the bicycles will be simpler thanks to the admin side of this solution. The bicycle will be equipped with a GPS tracker, Bluetooth module, Arduino, and security locking devices
+        for this. The cyclists will be linked up via a smartphone application, and the admin side will
+        link them up with the rental store.</string>
 </resources>

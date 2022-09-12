@@ -6,56 +6,55 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".user.SingleRideFragment">
 
-    <EditText
-        android:id="@+id/editTextSStartDate"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="220dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/custom_input"
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/textInputLayout9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="16dp"
         android:hint="Start Date"
-        android:paddingLeft="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <EditText
-        android:id="@+id/editTextSEndDate"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:paddingLeft="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="28dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.9">
 
-        android:layout_marginTop="50dp"
-        android:background="@drawable/custom_input"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextSStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/textInputLayout10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:hint="End Date"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSStartDate" />
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout9"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout9"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout9">
 
-    <EditText
-        android:id="@+id/editTextSBicycleType"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginEnd="20dp"
-        android:paddingLeft="20dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/custom_input"
-        android:hint="Bicycle Type"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSEndDate" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextSEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <Button
         android:id="@+id/buttonSingleRide"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:backgroundTint="@color/my_blue"
         android:text="Booked"
-        android:background="@drawable/custom_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSBicycleType" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout10" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

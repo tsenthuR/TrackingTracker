@@ -19,20 +19,30 @@ public class HomeUserActivity extends AppCompatActivity {
 
 
     public void GoTOFlaging(View view) {
+        Intent goToMainFlag = new Intent(this,FlagingMainActivity.class);
+        startActivity(goToMainFlag);
     }
 
     public void GoTOBooking(View view) {
-        Intent goToBook = new Intent(this,BookedActivity.class);
+        Intent goToBook = new Intent(this,BookedMainActivity.class);
         startActivity(goToBook);
     }
 
     public void GoToLocking(View view) {
-        Toast.makeText(this,"Your Cycle Locked",Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"Your Cycle Unlocked",Toast.LENGTH_LONG).show();
     }
 
     public void GoToChat(View view) {
-        Intent goToChat = new Intent(this,ChatActivity.class);
-        startActivity(goToChat);
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, "Hii");
+        sendIntent.setType("text/plain");
+        // Put this line here
+        sendIntent.setPackage("com.whatsapp");
+        //
+        startActivity(sendIntent);
+        Toast.makeText(this,"Open Whatsapp",Toast.LENGTH_LONG).show();
+
     }
 
     public void GoToHelp(View view) {
@@ -41,6 +51,8 @@ public class HomeUserActivity extends AppCompatActivity {
     }
 
     public void GoTOAbout(View view) {
-        Toast.makeText(this,"About",Toast.LENGTH_LONG).show();
+        Intent goToAbout = new Intent(this,ChatActivity.class);
+        startActivity(goToAbout);
+
     }
 }

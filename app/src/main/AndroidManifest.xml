@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.kisho.trackingtracker">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +15,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TrackingTracker"
         tools:targetApi="31">
+        <activity
+            android:name=".user.FlagingsViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.BookingDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".user.BookedMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.HomeAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.FlagingMainActivity"
+            android:exported="false" />
         <activity
             android:name=".admin.LoginAdminActivity"
             android:exported="false" />
@@ -36,7 +53,7 @@
             android:exported="false" />
         <activity
             android:name=".user.BookedActivity"
-            android:exported="false" />
+            android:exported="false"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
